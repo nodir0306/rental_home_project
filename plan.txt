@@ -1,0 +1,21 @@
+Online market
+
+Modellar: 
+  1. Category -> bo'limlar
+  2. Product -> mahsulotlar
+
+Category model:
+  id: PK
+  name: VARCHAR(256)
+  image_url: VARCHAR(256)
+  category_id: INT -> reference Category.id
+
+
+Product model:
+  id: PK
+  title: VARCHAR(256)
+  description: TEXT
+  price: INT
+  image_url: VARCHAR(256)
+  rating: INT (0 - 5)
+  category_id: FK -> Category.id
